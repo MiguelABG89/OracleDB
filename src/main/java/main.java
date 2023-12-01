@@ -1,4 +1,5 @@
 import static code.ConsultaInsertarOracle.InsertarVenta;
+import static code.ConsultaListarVentas.ListadoVentas;
 import static code.ConsultasOracle.listarClientes;
 import static code.ConsultasOracle.listarProductos;
 
@@ -19,6 +20,7 @@ public class main {
                 case "1" -> {listarClientes();}
                 case "2" -> {listarProductos();}
                 case "3" -> {InsertarVenta();}
+                case "4" -> {ListadoVentas();}
                 default -> {System.out.println("Opción incorrecta");}
             }
         }while (!salir);
